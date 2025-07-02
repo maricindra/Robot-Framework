@@ -1,0 +1,48 @@
+# Testes de Automação Web para Lojas Americanas com Robot Framework
+
+Este projeto contém testes de automação web desenvolvidos com Robot Framework e SeleniumLibrary, focando em funcionalidades chave do site das Lojas Americanas.
+
+## 🚀 Objetivo do Projeto
+
+O principal objetivo deste projeto é validar a funcionalidade essencial do site das Lojas Americanas através de testes automatizados, garantindo que o fluxo de navegação, pesquisa de produtos e o processo de login estejam operacionais. Isso ajuda a identificar regressões rapidamente e a manter a qualidade da experiência do usuário.
+
+## 🔍 Definição do Teste:
+- Teste de Sistema de Interface Web : Interage com a interface do usuário; Simula ações do Usuário, Verifica o comportamento do sistema como um usuário final.
+- Teste Funcional : Verifica a funcionalidade de Login, botão, busca...
+- Técnica Caixa Preta : Interage simulando um usuário sem conhecimento interno do codigo.
+
+
+## ✨ Visão Geral do Teste
+
+O teste principal (Caso de Teste - Lojas Americanas) executa uma sequência de ações que simulam o comportamento de um usuário real no site:
+
+1.  **Acessar a Página Inicial:** Navega para a URL principal das Lojas Americanas.
+2.  **Testar Oferta Relâmpago:** Interage com possíveis pop-ups ou elementos de "oferta relâmpago" que possam aparecer ao carregar a página (fechando-os ou validando sua presença, conforme a implementação específica).
+3.  **Pesquisar por Produto:** Realiza uma busca por um produto específico (`Playstation 5`) na barra de pesquisa.
+4.  **Retornar à Homepage:** Navega de volta para a página inicial do site.
+5.  **Tentar Login com Usuário e Senha Corretos:** Inicia o fluxo de login e tenta autenticar com credenciais de usuário e senha pré-definidas.
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Robot Framework:** Um framework de automação de testes genérico e de código aberto.
+* **SeleniumLibrary:** Biblioteca do Robot Framework que utiliza o Selenium WebDriver para interação com navegadores web.
+* **Python:** Linguagem de programação em que o Robot Framework e suas bibliotecas são construídos.
+* **HTML e CSS** Linguagem de Marcação de pagina e de Estilo para identificar e interagir com elementos web.
+* **Microsoft Edge / MSEdgeDriver:** Navegador e seu driver correspondente para execução dos testes.
+
+## ⚙️ Configuração e Execução
+
+Para rodar este projeto em sua máquina, siga os passos abaixo:
+
+### Pré-requisitos
+
+* **Python instalado.
+* pip (gerenciador de pacotes do Python).
+* Microsoft Edge Browser** instalado.
+* MSEdgeDriver: Baixe a versão correspondente ao seu navegador Edge em [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) e adicione-o ao PATH do seu sistema ou coloque-o na mesma pasta do seu projeto.
+
+### 👩‍💻 Instalação
+
+1.  Instale o Robot Framework e a SeleniumLibrary:
+    pip install robotframework 
+    pip install robotframework-seleniumlibrary
